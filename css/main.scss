@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+header {
+    background-image: url('../buddy/home1/img/2.jpg');
+    background-size: cover;
+    &.container-fluid {
+        padding-right: 0;
+        overflow: hidden;
+    }
+    .row {
+        overflow: hidden;
+        .box-content {
+            &>p {
+                width: 250px;
+                margin-left: 30px;
+            }
+            .title {
+                margin-left: 30px;
+                margin-top: 90px;
+                .title1 {
+                    font-family: 'Concert One', cursive;
+                    color: black;
+                    font-size: 80px;
+                    margin-bottom: 0;
+                    height: 80px;
+                }
+                .title2 {
+                    font-family: 'Concert One', cursive;
+                    color: #f9581b;
+                    font-size: 80px;
+                }
+                .content1, .content2 {
+                    font-size: 2em;
+                    margin-bottom: 0;
+                }
+            }
+            &>img {
+                position: absolute;
+            }
+            .contact {
+                display: flex;
+                margin-left: 30px;
+                margin-top: 50px;
+                p {
+                    margin: 0;
+                }
+                .documentation {
+                    display: flex;
+                    border: 3px solid #1db713;
+                    padding: 15px 45px;
+                    border-radius: 0 55px 55px;
+                    align-items: center;
+                    height: 95px;
+                    text-decoration: none;
+                    position: relative;
+                    justify-content: center;
+                    transition: .3s;
+                    .title {
+                        width: 135px;
+                        color: #1db713;
+                        padding-left: 18px;
+                        z-index: 1;
+                    }
+                    .icon {
+                        display: flex;
+                        color: #1db713;
+                        font-size: 50px;
+                        position: relative;
+                        padding-right: 20px;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 2px;
+                            height: 100%;
+                            right: 0;
+                            background-color: #1db713;
+                        }
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 80%;
+                        height: 0;
+                        background-color: #1db713;
+                        border-radius: 0 55px 55px;
+                        transition: .3s;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover {
+                        .title {
+                            color: white;
+                        }
+                        .icon {
+                            color: white;
+                            &::before {
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+                .support {
+                    display: flex;
+                    padding: 15px 45px;
+                    border-radius: 0 55px 55px;
+                    align-items: center;
+                    height: 95px;
+                    text-decoration: none;
+                    .title {
+                        width: 145px;
+                        color: black;
+                        padding-left: 18px;
+                        font-weight: bold;
+                        transition: .3s;
+                    }
+                    .icon {
+                        display: flex;
+                        color: #f9581b;
+                        font-size: 50px;
+                        position: relative;
+                        padding-right: 20px;
+                        transition: .3s;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 2px;
+                            height: 100%;
+                            right: 0;
+                            background-color: black;
+                        }
+                    }
+                    &:hover {
+                        .title {
+                            color: #f9581b;
+                        }
+                        .icon {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .box-img {
+            position: relative;
+            #feed {
+                position: absolute;
+                right: 305px;
+                top: 5px;
+                width: 220px;
+            }
+            p {
+                padding-top: 60px;
+                #dog {
+                    width: 100%;
+                }
+            }
+            #virus {
+                position: absolute;
+                width: 135px;
+                right: 135px;
+                top: 410px;
+                transition: 3s;
+            }
+        }
+    }    
+}
+section {
+    margin-top: 160px;
+    .box-page {
+        background-image: url('../img/bgbox.jpg');
+        .buddy, .coco, .bella {
+            margin-bottom: 85px;
+            h1 {
+                font-size: 55px;
+                font-family: 'Concert One', cursive;
+                margin-bottom: 35px;
+            }
+            .row {
+                .col-lg-4.col-md-12 {
+                    height: 510px;
+                    .box {
+                        border: 6px solid #dfdfdf;
+                        height: 100%;
+                        overflow: hidden;
+                        transition: .3s;
+                        img {
+                            width: 100%;
+                            transition: 5s;
+                        }
+                        &:hover {
+                            box-shadow: 3px 3px 6px -1px #9b9b9b;
+                        }
+                    }
+                }
+            }
+        }
+        .bella {
+            margin-bottom: 0;
+        }
+    }
+    .plugin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 110px 0;
+        .content {
+            text-transform: uppercase;
+            color: #f9581b;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        h1 {
+            font-family: 'Concert One', cursive;
+            font-size: 50px;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;        
+        }
+        .img {
+            margin: 0 20px;
+        }
+    }
+    .discover {
+        width: 100%;
+        display: flex;
+        background-image: url('../img/bgdis.jpg');
+        background-position: 50% -1507.73px;
+        .box-img {
+            width: 100%;
+            #discover {
+                .carousel-indicators {
+                    li {
+                        width: 10px;
+                        height: 10px;
+                        background: #DDD;
+                        border-top: 0;
+                        border-bottom: 0;
+                        border-radius: 50%;
+                    }
+                    .active {
+                        background: #f9581b;
+                    }
+                }
+            }
+        }
+        .box-content {
+            width: 100%;
+            padding: 0 40px;
+            p {
+                font-weight: 500;
+            }
+            h1 {
+                font-size: 3rem;
+                font-family: 'Concert One', cursive;
+                span {
+                    color: #f9581b;
+                }
+            }
+            .list-item1 {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                margin-top: 50px;
+                .item {
+                    display: flex;
+                    height: 55px;
+                    width: 50%;
+                    justify-content: left;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    p {
+                        margin: 0;
+                    }
+                    div {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        color: white;
+                        background-color: #038d27;
+                        border-radius: 50%;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        margin-right: 15px;
+                    }
+                    &:nth-child(2), &:nth-child(3) {
+                        div {
+                            background-color: #e56b3c;
+                        }
+                    }
+                    i {
+                        padding: 10px;
+                    }
+                }
+            }
+            table {
+                tbody {
+                    tr {
+                        display: flex;
+                        td {
+                            display: flex;
+                            border: none;
+                            align-items: center;
+                            width: 50%;
+                            padding-left: 0;
+                            span {
+                                font-size: 22px;
+                                margin-right: 10px;
+                            }
+                            p {
+                                margin: 0;
+                                font-weight: normal;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .special-feature {
+        margin-top: 150px;
+        .box1 {
+            background-image: url('../img/bgsp1.jpg');
+            background-position: 50%;
+            background-size: cover;
+            .box-content {
+                width: 100%;
+                padding: 80px;
+                .title {
+                    font-weight: 500;
+                }
+                h1 {
+                    font-family: 'Concert One', cursive;
+                    font-size: 52px;
+                    margin-bottom: 35px;
+                    span {
+                        color: #f9581b;
+                    }
+                }
+                .content {
+                    line-height: 2rem;
+                }
+            }
+            .box-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                padding: 20px 0;
+                .img {
+                    position: relative;
+                    img {
+                        width: 100%;
+                    }
+                    .after {
+                        position: absolute;
+                        top: -120px;
+                        right: 70px;
+                        width: 200px;
+                    }
+                }
+                
+            }
+        }
+        .box2 {
+            margin-top: 200px;
+            &.container-fluid {
+                padding-left: 0;
+            }
+            .box-img {
+                width: 100%;
+                position: relative;
+                padding-left: 0;
+                .img {
+                    img {
+                        width: 100%;
+                    }
+                }
+                & > img {
+                    position: absolute;
+                    top: -60px;
+                    width: 250px;
+                    left: 155px;
+                    transition: 3s;
+                }
+            }
+            .box-content {
+                width: 100%;
+                padding: 80px;
+                .title {
+                    font-weight: 500;
+                }
+                h1 {
+                    font-family: 'Concert One', cursive;
+                    font-size: 52px;
+                    margin-bottom: 35px;
+                    width: 80%;
+                    span {
+                        color: #f9581b;
+                    }
+                }
+                .content {
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    .feed-back {
+        .bold-theme {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 200px;
+            }
+        }
+        .list-img {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            padding: 80px 50px;
+            .img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-weight: 500;
+                    margin: 0;
+                }
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .header-style {
+        background-image: url('../img/headerStyle.jpg');
+        padding: 100px 20px;
+        h1 {
+            font-family: 'Concert One', cursive;
+            font-size: 60px;
+            margin: 0 auto;
+            width: fit-content;
+            color: white;
+        }
+        .list-header {
+            margin-top: 50px;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .item {
+                width: 30%;
+                p {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+    .something {
+        margin: 100px 0;
+        #somethingHome {
+            .carousel-inner {
+                .carousel-item {
+                    p {
+                        width: 80%;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .carousel-indicators {
+                margin: 0;
+                li {
+                    border-top: none;
+                    border-bottom: none;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #ddd;
+                    margin: 0 8px;
+                }
+                .active {
+                    background-color: #f9581b;
+                }
+            }
+        }
+    }
+}
+footer {
+    background-image: url('../img/bgfooter.jpg');
+    background-size: cover;
+    padding: 150px 20px 200px 20px;
+    .img-banner {
+        width: 150px;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        font-weight: 500;
+        font-family: 'Concert One', cursive;
+        width: 670px;
+        text-align: center;
+        margin: 50px auto;
+        color: white;
+        font-size: 32px;
+    }
+    form {
+        width: 500px;
+        margin: auto;
+        .form-group {
+            display: flex;
+            .form-control {
+                border-radius: 0 50px 50px;
+                height: 50px;
+                background: #ffffff00;
+                color: white;
+                padding-left: 20px;
+                margin-right: 20px;
+            }
+            .btn {
+                border-radius: 0 50px 50px;
+                padding: 0 30px;
+            }
+        }
+    }
+}

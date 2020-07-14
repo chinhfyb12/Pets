@@ -1,0 +1,40 @@
+@media (max-width: 991px) {
+    header {
+        #dog {
+            width: 360px;
+            top: 50px;
+            right: -35px;
+        }
+        #feed {
+            width: 165px;
+            right: 125px;
+        }
+        #virus {
+            width: 90px;
+            right: 50px;
+            top: 230px;
+        }
+    }
+    section {
+        .box-page {
+            .col-lg-4.col-md-12 {
+                margin-bottom: 20px;
+            }
+        }
+        .discover {
+            flex-direction: column;
+            .box-content {
+                padding-top: 50px;
+            }
+        }
+        .special-feature {
+            .box1, .box2 {
+                flex-direction: column;
+            }
+            .after {
+                top: -130px;
+                right: -60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@media (max-width: 650px) {
+    header {
+        .row {
+            .box-content {
+                &>p {
+                    width: 210px;
+                }
+                .title {
+                    margin-top: 0 !important;
+                    .title1, .title2 {
+                        font-size: 70px;
+                    }
+                    .content1, .content2 {
+                        font-size: 1.5em;
+                    }
+                }
+                .contact {
+                    .documentation {
+                        width: 300px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        
+        #dog {
+            width: 300px;
+        }
+        #feed {
+            width: 140px;
+            right: 90px;    
+        }
+        #virus {
+            width: 65px;
+            top: 190px;
+        }
+    }
+    section .header-style .list-header .item {
+        width: 100%;
+    }
+    section {
+        .discover {
+            .box-content {
+                padding-left: 20px;
+                h1 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        .special-feature {
+            .box1, .box2 {
+                .box-content {
+                    padding-left: 20px;
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            .box2 {
+                .box-img {
+                    &>img {
+                        top: -20px;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .header-style {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+        .plugin {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    footer {
+        .content {
+            font-size: 25px;
+            width: auto;
+        }
+        form {
+            padding: 0 20px;
+            width: auto;
+        }
+    }
+}

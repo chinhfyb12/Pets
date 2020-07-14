@@ -1,0 +1,79 @@
+@media(max-width: 1040px) {
+    header {
+        .title {
+            .title1, .title2 {
+                font-size: 65px;
+            }
+            .content1, .content2 {
+                font-size: 1.5rem;
+            }
+        }
+        .contact {
+            flex-direction: column;
+            .documentation {
+                margin-bottom: 20px;
+            }
+            .documentation, .support {
+                width: 365px;
+                height: 80px;
+                .title {
+                    width: 220px;
+                }
+                .icon {
+                    font-size: 40px;
+                }
+            }
+        }
+        #dog {
+            width: 510px;
+            top: 100px;
+            right: -35px;
+        }
+        #feed {
+            right: 190px;
+        }
+        #virus {
+            width: 135px;
+            right: 60px;
+            top: 320px;
+        }
+    }
+    section {
+        .discover {
+            .box-content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        table {
+            tbody {
+                tr {
+                    td {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .special-feature {
+            .box2 {
+                .box-img {
+                    display: flex;
+                    align-items: center;
+                    >img {
+                        top: 50px;
+                        left: 100px;
+                    }
+                }
+            }
+        }
+        .feed-back {
+            .list-img {
+                padding: 80px 0;
+                .img {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
