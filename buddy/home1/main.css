@@ -48,6 +48,7 @@ header .navbar .navbar-brand {
 }
 
 header .navbar .box-menu {
+  display: none;
   cursor: pointer;
   height: inherit;
   -webkit-box-pack: center;

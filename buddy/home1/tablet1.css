@@ -20,7 +20,9 @@
             box-shadow: 2px 2px 3px 0px #ececec;
   }
   header .navbar .box-menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .navbar .navbar-brand {
     height: 100%;

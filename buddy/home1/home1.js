@@ -36,11 +36,20 @@ let check = function() {
         item.querySelector('.navbar-nav').style.pointerEvents = "none";
       });
     });
-    document.querySelector('body').onscroll = function() {
-      document.querySelector('header > .navbar').style.transform = `translateY(${window.pageYOffset}px)`
-    }
-  }
+  } 
 }()
+
+document.querySelector('body').onscroll = function() {
+  document.querySelector('header > .navbar').style.transform = `translateY(${window.pageYOffset}px)`
+  if(window.pageYOffset >= 100) {
+    document.querySelector('header > .navbar').style.background = 'white'
+    document.querySelector('header > .navbar').style.boxShadow = '2px 2px 3px 0px #ffffff'
+  }
+  if(window.pageYOffset < 100) {
+    document.querySelector('header > .navbar').style.background = 'none'
+    document.querySelector('header > .navbar').style.boxShadow = 'none'
+  }
+}
 
 document.querySelectorAll('.navbar-toggler').forEach(item => {
   item.addEventListener('click', function() {
