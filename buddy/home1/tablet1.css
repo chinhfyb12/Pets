@@ -1,0 +1,191 @@
+@media (max-width: 991px) {
+  body {
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body.active {
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+    overflow: hidden;
+  }
+  header {
+    background-position: top;
+  }
+  header .navbar {
+    padding: 0 40px;
+    height: 50px;
+    width: 100%;
+    background: white;
+    -webkit-box-shadow: 2px 2px 3px 0px #ececec;
+            box-shadow: 2px 2px 3px 0px #ececec;
+  }
+  header .navbar .box-menu {
+    display: block;
+  }
+  header .navbar .navbar-brand {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 125px;
+  }
+  header .navbar .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    right: 100%;
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 100vh;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-box-shadow: 1px 0px 6px 1px #e9e9e9;
+            box-shadow: 1px 0px 6px 1px #e9e9e9;
+    overflow: auto;
+  }
+  header .navbar .navbar-collapse > .navbar-nav {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .navbar-toggler {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    padding: 15px;
+    outline: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .navbar-toggler span {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .navbar-toggler span::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 1px;
+    background: black;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .navbar-toggler span::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 1px;
+    background: black;
+    -webkit-transform: rotate(45deg) translate(-2px, 2px);
+            transform: rotate(45deg) translate(-2px, 2px);
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .navbar-toggler.active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .nav-link::after {
+    content: none;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item:nth-child(6)::after {
+    width: 55%;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item .menu_list {
+    opacity: 1;
+    pointer-events: all;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item > .navbar-nav {
+    width: 100%;
+    position: relative;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item > .navbar-nav .nav-item {
+    margin: 0;
+    position: relative;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item > .navbar-nav .nav-item .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+  }
+  header .navbar .navbar-collapse > .navbar-nav > .nav-item > .navbar-nav .nav-item .navbar-nav .nav-item .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: none !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: lighter;
+  }
+  header .box-content .row .box1 > h1 {
+    font-size: 3em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .box-content .row .box1 #boarding .carousel-inner .carousel-item .box .content h2 {
+    font-size: 1.2em;
+  }
+  header .box-content .row .box2 {
+    padding-top: 110px;
+  }
+  section .keep-happy .row .box-content h1 {
+    font-size: 3em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section .keep-happy .row .box-content h1 span {
+    margin-left: 15px;
+  }
+  section .box-page {
+    padding-top: 0;
+    overflow: hidden;
+  }
+  section .activity .box1.row .box-content h1 {
+    font-size: 3em;
+  }
+  section .something .box-content #something .carousel-inner .carousel-item .content {
+    font-size: 1.2em;
+  }
+  section .sale__price {
+    margin-bottom: 50px;
+  }
+  section .time__content h1 {
+    font-size: 3em;
+  }
+  section .time__content .list-time .nav-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section .time__content .list-time .nav-item .icon {
+    width: 60px;
+  }
+  section .time__content .list-time .nav-item__content .content {
+    font-size: 0.9em;
+  }
+  footer.container-fluid .logo, footer.container-fluid .about, footer.container-fluid .link, footer.container-fluid .newsletter {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=tablet1.css.map */

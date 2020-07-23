@@ -1,0 +1,50 @@
+@media (max-width: 575px) {
+    header {
+        .box-content {
+            .row {
+                .box1 {
+                    &>h1 {
+                        flex-direction: column;
+                    }
+                    #boarding {
+                        .carousel-inner {
+                            .carousel-item {
+                                .box {
+                                    .content {
+                                        width: 70%;
+                                        p {
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section {
+        .keep-happy {
+            .row {
+                .box-img {
+                    overflow: hidden;
+                }
+                .box-content {
+                    h1 {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        .sale {
+            &__price {
+                &-box {
+                    &.-day_2 {
+                        position: unset;
+                    }
+                }
+            }
+        }
+    }
+}

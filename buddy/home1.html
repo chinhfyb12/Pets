@@ -3,37 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./home1/header.css">
+    <link rel="stylesheet" href="./home1/main.css">
+    <link rel="stylesheet" href="./home1/tablet1.css">
+    <link rel="stylesheet" href="./home1/mobile.css">
     <title>Buddy</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
+            <div href="#1" class="box-menu d-flex">
+                <span></span>
+            </div>
             <a class="navbar-brand" href="#1">
                 <img src="./home1/img/logo_black.png" alt="Logo">
             </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-0">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#1">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active btn-link" href="#1">Home <span class="sr-only">(current)</span></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home_nav" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <ul class="navbar-nav home_list menu_list collapse" id="home_nav">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link active">Buddy</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home_nav_buddy" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="home_nav_buddy">
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link active">Home 01</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 02</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 03</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Coco</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home_nav_coco" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="home_nav_coco">
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 01</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 02</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 03</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Bella</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home_nav_bella" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="home_nav_bella">
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 01</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 02</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#1" class="nav-link">Home 03</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#1">Pages</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pages_nav" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <ul class="navbar-nav pages_list menu_list collapse" id="pages_nav">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Our process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Single service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Prices</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Coming soon</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#1">Blog</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#blog_nav" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <ul class="navbar-nav blog_list menu_list collapse" id="blog_nav">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Standard View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Columns View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Simple View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Grid View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Single Post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Gallery</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#1">Shop</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shop_nav" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <ul class="navbar-nav menu_list shop_list collapse" id="shop_nav">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">My Account</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#1">Elements</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elements_nav" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                        </button>
+                        <ul class="navbar-nav menu_list elements_list collapse" id="elements_nav">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Base</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elements_nav_base" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="elements_nav_base">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Headlines</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Buttons & Icons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Images</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Inner Row & Column</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Countdown & Counter</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Card</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Common</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elements_nav_common" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="elements_nav_common">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Progress & Advanced bar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Price List & Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Google & Openstreet Maps</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Accordions & Tabs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Organic Animation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link">Presentational</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elements_nav_presentational" aria-controls="home_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                </button>
+                                <ul class="navbar-nav flex-column collapse" id="elements_nav_presentational">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Slider</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Cost Calculator</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Social Media</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Blog Layouts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item d-flex justify-content-center align-items-center position-relative">
                         <a class="nav-link" href="#1">
@@ -345,7 +557,201 @@
                 </div>
             </div>
         </div>
+        <div class="sale container-fluid">
+            <div class="row">
+                <div class="sale__content col-lg-3 col-md-6 col-sm-6">
+                    <p class="title">BRING YOUR PET</p>
+                    <h1>The Best Choice</h1>
+                    <p class="content">We take the responsibility of caring for pets very seriously. They are members of your family.</p>
+                    <a href="#1">GET QUOTE</a>
+                </div>
+                <div class="sale__price col-lg-3 col-md-6 col-sm-6">
+                    <div class="sale__price-box -day_1">
+                        <p class="title">PET CARE</p>
+                        <h1>1 Day</h1>
+                        <p class="svg">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#7ac143;}.cls-2{fill:#282828;}</style></defs><title>Icons-Pawsitive</title><path class="cls-1" d="M45.67,49h7.84A11.75,11.75,0,0,1,65.26,60.75v23.5a0,0,0,0,1,0,0H33.93a0,0,0,0,1,0,0V60.75A11.75,11.75,0,0,1,45.67,49Z"></path><path class="cls-2" d="M15.64,49.07l2.69-2.58V83.33A6.67,6.67,0,0,0,25,90H75a6.67,6.67,0,0,0,6.67-6.67V46.48l2.69,2.59A3.33,3.33,0,1,0,89,44.26l-8.28-8h0L55.89,12.44a8.32,8.32,0,0,0-11.73,0L19.32,36.29h0l-8.29,8a3.33,3.33,0,1,0,4.62,4.8Zm46,34.27H38.33V60A6.67,6.67,0,0,1,45,53.33H55A6.67,6.67,0,0,1,61.67,60ZM48.82,17.16a1.68,1.68,0,0,1,2.4,0L75,40.07V83.33H68.33V60A13.35,13.35,0,0,0,55,46.67H45A13.35,13.35,0,0,0,31.67,60V83.33H25V40.07Zm0,0"></path></svg>
+                        </p>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p class="content">Double room</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Socialise</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Brush</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Pet TV</p>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="price">
+                            <span>$</span>
+                            <p>50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale__price col-lg-3 col-md-6 col-sm-6">
+                    <div class="sale__price-box -day_2">
+                        <p class="title">PET CARE</p>
+                        <h1>10 Days</h1>
+                        <p class="svg">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#7ac143;}.cls-2{fill:#282828;}</style></defs><title>Icons-Pawsitive</title><path class="cls-1" d="M45.67,49h7.84A11.75,11.75,0,0,1,65.26,60.75v23.5a0,0,0,0,1,0,0H33.93a0,0,0,0,1,0,0V60.75A11.75,11.75,0,0,1,45.67,49Z"></path><path class="cls-2" d="M15.64,49.07l2.69-2.58V83.33A6.67,6.67,0,0,0,25,90H75a6.67,6.67,0,0,0,6.67-6.67V46.48l2.69,2.59A3.33,3.33,0,1,0,89,44.26l-8.28-8h0L55.89,12.44a8.32,8.32,0,0,0-11.73,0L19.32,36.29h0l-8.29,8a3.33,3.33,0,1,0,4.62,4.8Zm46,34.27H38.33V60A6.67,6.67,0,0,1,45,53.33H55A6.67,6.67,0,0,1,61.67,60ZM48.82,17.16a1.68,1.68,0,0,1,2.4,0L75,40.07V83.33H68.33V60A13.35,13.35,0,0,0,55,46.67H45A13.35,13.35,0,0,0,31.67,60V83.33H25V40.07Zm0,0"></path></svg>
+                        </p>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p class="content">Single room</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">SocialiseExcercise</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Custom Meals</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Spa and Grooming</p>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="price">
+                            <span>$</span>
+                            <p>350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale__price col-lg-3 col-md-6 col-sm-6">
+                    <div class="sale__price-box">
+                        <p class="title">PET CARE</p>
+                        <h1>20 Days</h1>
+                        <p class="svg">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#7ac143;}.cls-2{fill:#282828;}</style></defs><title>Icons-Pawsitive</title><path class="cls-1" d="M45.67,49h7.84A11.75,11.75,0,0,1,65.26,60.75v23.5a0,0,0,0,1,0,0H33.93a0,0,0,0,1,0,0V60.75A11.75,11.75,0,0,1,45.67,49Z"></path><path class="cls-2" d="M15.64,49.07l2.69-2.58V83.33A6.67,6.67,0,0,0,25,90H75a6.67,6.67,0,0,0,6.67-6.67V46.48l2.69,2.59A3.33,3.33,0,1,0,89,44.26l-8.28-8h0L55.89,12.44a8.32,8.32,0,0,0-11.73,0L19.32,36.29h0l-8.29,8a3.33,3.33,0,1,0,4.62,4.8Zm46,34.27H38.33V60A6.67,6.67,0,0,1,45,53.33H55A6.67,6.67,0,0,1,61.67,60ZM48.82,17.16a1.68,1.68,0,0,1,2.4,0L75,40.07V83.33H68.33V60A13.35,13.35,0,0,0,55,46.67H45A13.35,13.35,0,0,0,31.67,60V83.33H25V40.07Zm0,0"></path></svg>
+                        </p>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <p class="content">Single room</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Excercise 2x</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Custom Meals</p>
+                                <span></span>
+                            </li>
+                            <li class="nav-item">
+                                <p class="content">Grooming 2x</p>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="price">
+                            <span>$</span>
+                            <p>550</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time container-fluid">
+            <div class="row">
+                <div class="time__content col-lg-5">
+                    <h1>Check-in <span>Time</span></h1>
+                    <ul class="list-time navbar-nav">
+                        <li class="nav-item">
+                            <p class="icon">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#7ac143;}.cls-2{fill:#282828;}</style></defs><title>_</title><circle class="cls-1" cx="50" cy="51" r="32"></circle><path class="cls-2" d="M80.82,89.4a2.59,2.59,0,0,1-2.39-1.32L72.94,80l-.61.49A34.53,34.53,0,0,1,50,88.23a35.91,35.91,0,0,1-22.34-7.55l-.61-.47L21.76,88a2.58,2.58,0,0,1-2.41,1.35,2.41,2.41,0,0,1-1.56-.51,2.59,2.59,0,0,1-1.33-1.82,3.12,3.12,0,0,1,.49-2.25l5.35-8.2.57-.53-.47-.52a34.94,34.94,0,0,1-9.19-24.14,38.53,38.53,0,0,1,3.45-15.78l.13-.3L16.65,35A13.31,13.31,0,0,1,11.53,25c0-3.88,1.89-7.53,5.62-10.83l.2-.2a14.94,14.94,0,0,1,8.8-3.33,11,11,0,0,1,2,.18c3.05.53,5.89,2.41,8.44,5.6l.19.23.35,0A42.07,42.07,0,0,1,50,14.47a35.64,35.64,0,0,1,12.64,2.3l.3.11.33-.16q3.91-4.84,8.81-5.78a13,13,0,0,1,1.8-.12A14.77,14.77,0,0,1,82.7,14l.07.13c3.78,3.21,5.7,6.86,5.7,10.83a12.85,12.85,0,0,1-4.93,9.83l-.25.21,0,.37a38.56,38.56,0,0,1,3.36,16,36.54,36.54,0,0,1-8.87,24.17l-.43.51.63.64,5.44,8.1c1,1.77.74,3-.95,4A2.19,2.19,0,0,1,80.82,89.4ZM50,20.39a29.44,29.44,0,0,0-21.71,9.18,30.27,30.27,0,0,0-9,21.86,30,30,0,0,0,9,21.78A29.57,29.57,0,0,0,50,82.31,29.43,29.43,0,0,0,71.7,73.13a30.25,30.25,0,0,0,9-21.86,30,30,0,0,0-9-21.78A29.57,29.57,0,0,0,50,20.39ZM25.88,16.79a7.79,7.79,0,0,0-4.81,2.1c-2.29,1.93-3.45,3.92-3.45,5.92a8.73,8.73,0,0,0,1.8,4.42l.56.85.62-.81a38.51,38.51,0,0,1,10-9.21l.83-.53-.76-.64a7.88,7.88,0,0,0-3.9-2A4.42,4.42,0,0,0,25.88,16.79Zm48.25,0a4.7,4.7,0,0,0-1,.11,7.78,7.78,0,0,0-3.83,2l-.76.64.84.53a38.64,38.64,0,0,1,10,9.21l.5.66.59-.59a6.21,6.21,0,0,0,1.89-4.53c0-2-1.16-4-3.44-5.92A7.82,7.82,0,0,0,74.12,16.79Z"></path><path class="cls-2" d="M60.89,65.28a2.45,2.45,0,0,1-2-.92L47.83,53.43a3.47,3.47,0,0,1-.79-2V31.34a3.06,3.06,0,0,1,.88-2.25,2.92,2.92,0,0,1,4.17,0A3.07,3.07,0,0,1,53,31.34V50L63.05,60.15a3.14,3.14,0,0,1,1.13,2.15,2.93,2.93,0,0,1-1.11,2A3,3,0,0,1,60.89,65.28Z"></path></svg>
+                            </p>
+                            <div class="nav-item__content">
+                                <p class="title">FROM 8 AM TO 10 PM</p>
+                                <p class="content">Timings are drop off after 8am and collection is before 10am on the morning of going home.</p>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <p class="icon">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#7ac143;}.cls-2{fill:#282828;}</style></defs><title>Icons-Pawsitive</title><path class="cls-1" d="M82.61,46.48a32.78,32.78,0,0,0-29.09-29.1L50.2,17V30.5a19.72,19.72,0,0,1-19.7,19.7H17l.35,3.31A32.78,32.78,0,0,0,46.49,82.61L49.8,83V69.49A19.72,19.72,0,0,1,69.5,49.8H83Z"></path><path class="cls-2" d="M49.93,86.09a36.07,36.07,0,0,1-36-36v-.18a36.07,36.07,0,0,1,36-36h.18a36.07,36.07,0,0,1,36,35.79v.6a36.07,36.07,0,0,1-36,35.79h-.16Zm19.57-33a16.42,16.42,0,0,0-16.4,16.4V79.74l.33,0A29.89,29.89,0,0,0,79.7,53.43l0-.33Zm-49.2.33A29.88,29.88,0,0,0,46.57,79.7l.33,0V69.49A22.62,22.62,0,0,1,69.5,46.9H79.74l0-.33A29.88,29.88,0,0,0,53.44,20.3l-.33,0V30.5a22.62,22.62,0,0,1-22.6,22.6H20.27ZM46.57,20.3A29.88,29.88,0,0,0,20.3,46.56l0,.33H30.51A16.42,16.42,0,0,0,46.9,30.5V20.26Z"></path></svg>
+                            </p>
+                            <div class="nav-item__content">
+                                <p class="title">FAVOURITE TOYS</p>
+                                <p class="content">If your dog has separation anxiety we encourage you to bring something that smells like home.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="contact"><img src="./home1/img/text_02.png" alt=""></p>
+                </div>
+                <div class="time__img col-lg-7 pr-0">
+                    <img src="./home1/img/hero_image_05.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="logo col-lg-3 col-md-6 col-sm-6">
+                <p><img src="./home1/img/logo_orange.png" alt=""></p>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about col-lg-3 col-md-6 col-sm-6">
+                <p class="title">About</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>PO BOX Collins Street West</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">
+                            <i class="fas fa-phone"></i>
+                            <span>+2345 4857 545</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sun: 8AM - 8PM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links col-lg-3 col-md-6 col-sm-6">
+                <p class="title">Quick Links</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">Dog Boarding Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">Cat Boarding Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link">Spa and Grooming Services</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter col-lg-3 col-md-6 col-sm-6">
+                <p class="title">Newsletter</p>
+                <input type="text" name="" id="email" placeholder="Your email">
+                <input type="submit" class="btn" value="SUBCRIBE">
+            </div>
+        </div>
+    </footer>
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

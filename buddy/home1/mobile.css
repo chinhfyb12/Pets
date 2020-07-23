@@ -1,0 +1,27 @@
+@media (max-width: 575px) {
+  header .box-content .row .box1 > h1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .box-content .row .box1 #boarding .carousel-inner .carousel-item .box .content {
+    width: 70%;
+  }
+  header .box-content .row .box1 #boarding .carousel-inner .carousel-item .box .content p {
+    width: auto;
+  }
+  section .keep-happy .row .box-img {
+    overflow: hidden;
+  }
+  section .keep-happy .row .box-content h1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .sale__price-box.-day_2 {
+    position: unset;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

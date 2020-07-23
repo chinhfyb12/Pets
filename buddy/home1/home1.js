@@ -22,3 +22,33 @@ document.querySelectorAll('.polymorph3').forEach(item => {
     item.setAttribute('d', 'M85,54c-3,23-30,14-45,12c-13.67-1.82-14.64,10.43-27,8C6.36,72.69,2,63.14,2,54c0-13,13-38,35-40C58.45,12.05,87.2,37.14,85,54z');
   });
 });
+
+let check = function() {
+  let width = screen.width;
+  if(width > 991) {
+    document.querySelectorAll('header > .navbar > .collapse > .navbar-nav > .nav-item').forEach(item => {
+      item.addEventListener('mouseover', function() {
+        item.querySelector('.navbar-nav').style.opacity = "1";
+        item.querySelector('.navbar-nav').style.pointerEvents = "all";
+      });
+      item.addEventListener('mouseout', function() {
+        item.querySelector('.navbar-nav').style.opacity = "0";
+        item.querySelector('.navbar-nav').style.pointerEvents = "none";
+      });
+    });
+    document.querySelector('body').onscroll = function() {
+      document.querySelector('header > .navbar').style.transform = `translateY(${window.pageYOffset}px)`
+    }
+  }
+}()
+
+document.querySelectorAll('.navbar-toggler').forEach(item => {
+  item.addEventListener('click', function() {
+    item.classList.toggle('active');
+  });
+});
+
+document.querySelector('.box-menu').addEventListener('click', function() {
+  document.querySelector('.box-menu').classList.toggle('active');
+  document.querySelector('body').classList.toggle('active');
+});
